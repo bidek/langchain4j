@@ -10,6 +10,7 @@ enum Role {
     public static Role fromChatMessageType(ChatMessageType chatMessageType) {
         switch (chatMessageType) {
             case SYSTEM:
+            case TOOL_EXECUTION_RESULT:
                 return SYSTEM;
             case USER:
                 return USER;
